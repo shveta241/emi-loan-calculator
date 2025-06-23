@@ -18,6 +18,10 @@
                    href="{{ route('emi.process.form') }}">
                     Process EMI
                 </a>
+                <a class="btn btn-outline-light me-2 @if(request()->routeIs('emi.calculate.form')) active @endif"
+                href="{{ route('emi.calculate.form') }}">
+                    EMI Calculator
+                </a>
                 <form action="{{ route('logout') }}" method="POST" class="d-inline">
                     @csrf
                     <button class="btn btn-danger btn-sm" type="submit">Logout</button>
